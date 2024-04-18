@@ -18,7 +18,7 @@ if(updateInfo != null) {
             return;
         }
 
-        // 닉네임 정규식에 맞지 않으면
+        // 닉네임 정규식
         let regExp = /^[가-힣\w\d]{2,10}$/;
         if( !regExp.test(memberNickname.value)) {
             alert("닉네임이 유효하지 않습니다.");
@@ -26,9 +26,9 @@ if(updateInfo != null) {
             return;
         }
 
-        // *********** 닉네임 중복검사는 개별적으로 하십쇼
+        // ************* 닉네임 중복검사는 개별적으로 하십쇼
         // 테스트 시 닉네임 중복 안되게 조심하기!
-        // ***********
+        // *************
 
         // 전화번호 유효성 검사
         if(memberTel.value.trim().length === 0) {
@@ -38,7 +38,7 @@ if(updateInfo != null) {
         }
 
         // 전화번호 정규식에 맞지 않으면
-        regExp = /^01[0-9]{1}[0-9]{3,4}[0-9]{4}$/;
+        regExp = /^01[0-9]{1}[0-9]{3,4}[0-9]{4}$/
         if( !regExp.test(memberTel.value)) {
             alert("전화번호가 유효하지 않습니다");
             e.preventDefault();
@@ -55,22 +55,25 @@ if(updateInfo != null) {
         const addr2 = memberAddress[2].value.trim().length == 0; // t/f
 
         // 모두 true 인 경우만 true 저장
-        const result1 = addr0 && addr1 && addr2; // 아무것도 입력 X
+        const result1 = addr0 && addr1 && addr2;
 
         // 모두 false 인 경우만 true 저장
-        const result2 = !(addr0 || addr1 || addr2); // 모두 다 입력
+        const result2 = !(addr0 || addr1 || addr2);
 
         // 모두 입력 또는 모두 미입력이 아니면
         if( !(result1 || result2) ) {
             alert("주소를 모두 작성 또는 미작성 해주세요");
             e.preventDefault();
+            return;
         }
+
     });
 }
 
 
 
-// ------------------------------------------
+
+// ----------------------------------------------------
 
 /* 비밀번호 수정 */
 
@@ -90,7 +93,7 @@ if(changePw != null) {
         let str; // undefined 상태
         if( currentPw.value.trim().length == 0 ) str = "현재 비밀번호를 입력해주세요";
         else if( newPw.value.trim().length == 0 ) str = "새 비밀번호를 입력해주세요";
-        else if( newPwConfirm.value.trim().length == 0 ) str = "새 비밀번호 확인을 입력해주세요";
+        else if(newPwConfirm.value.trim().length == 0 ) str = "새 비밀번호 확인을 입력해주세요";
 
         if(str != undefined) { // str에 값이 대입됨 == if 중 하나 실행됨
             alert(str);
@@ -112,11 +115,12 @@ if(changePw != null) {
             alert("새 비밀번호가 일치하지 않습니다");
             e.preventDefault();
             return;
-        } 
+        }
     });
 };
 
-// -------------------------------------
+// ------------------------------------
+
 /* 탈퇴 유효성 검사 */
 
 // 탈퇴 form 태그
@@ -138,7 +142,7 @@ if(secession != null) {
 
         // 약관 동의 체크 확인
         // checkbox 또는 radio checked 속성
-        // - checked -> 체크 시 true, 미체크시 false 반환
+        // - checked -> 체크 시 true. 미체크 시 false 반환
 
         if(!agree.checked) { // 체크 안됐을 때
             alert("약관에 동의해주세요");
@@ -148,14 +152,12 @@ if(secession != null) {
 
         // 정말 탈퇴? 물어보기
         if( !confirm("정말 탈퇴 하시겠습니까?") ) {
-            alert("취소 되었습니다.");
+            alert("취소 되었습니다");
             e.preventDefault();
             return;
         }
     });
 }
-
-
 
 // -------------------------------------------------------
 /* 프로필 이미지 추가/변경/삭제 */
@@ -327,15 +329,3 @@ if(profile != null){
  3. 선택된 파일 정보를 저장하는 속성은
    value가 아니라 files이다
 */
-
-
-
-
-
-
-
-
-
-
-
-

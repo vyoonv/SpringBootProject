@@ -14,7 +14,7 @@ public interface MyPageService {
 	/** 회원 정보 수정
 	 * @param inputMember
 	 * @param memberAddress
-	 * @return result
+	 * @return
 	 */
 	int updateInfo(Member inputMember, String[] memberAddress);
 
@@ -26,8 +26,8 @@ public interface MyPageService {
 	int changePw(Map<String, Object> paramMap, int memberNo);
 
 	/** 회원 탈퇴
-	 * @param memberPw
-	 * @param memberNo
+	 * @param memberNo 
+	 * @param memberPw 
 	 * @return result
 	 */
 	int secession(String memberPw, int memberNo);
@@ -38,31 +38,28 @@ public interface MyPageService {
 	 */
 	String fileUpload1(MultipartFile uploadFile) throws Exception;
 
-	/** 파일 업로드 테스트 2 (+DB) 
+	/** 파일 업로드 테스트2(+DB)
 	 * @param uploadFile
 	 * @param memberNo
-	 * @return result 
+	 * @return result
+	 * @throws Exception
 	 */
-	int fileUpload2(MultipartFile uploadFile, int memberNo) throws IOException;
+	int fileUpload2(MultipartFile uploadFile, int memberNo) throws Exception;
 
-	/** 파일 목록 조회 
+	/** 파일 목록 조회
 	 * @return
 	 */
 	List<UploadFile> fileList();
 
-	/** 여러 파일 업로드 
+	/** 여러 파일 업로드
 	 * @param aaaList
 	 * @param bbbList
 	 * @param memberNo
-	 * @return result 
+	 * @return
+	 * @throws Exception 
 	 */
 	int fileUpload3(List<MultipartFile> aaaList, List<MultipartFile> bbbList, int memberNo) throws Exception;
 
-	/**
-	 * @param profileImg
-	 * @param loginMember
-	 * @return
-	 */
 	int profile(MultipartFile profileImg, Member loginMember) throws Exception;
 
 }

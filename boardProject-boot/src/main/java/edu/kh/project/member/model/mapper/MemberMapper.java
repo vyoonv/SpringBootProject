@@ -22,21 +22,8 @@ public interface MemberMapper {
 	 */
 	int checkEmail(String memberEmail);
 
-	/** 닉네임 중복 검사
-	 * @param memberNickname
-	 * @return count
-	 */
-	int checkNickname(String memberNickname);
+	Member quickLogin(String memberEmail);
 
-	/** 회원 가입 SQL 실행
-	 * @param inputMember
-	 * @return result
-	 */
-	int signup(Member inputMember);
-
-	/** 회원 목록 조회
-	 * @return memberList
-	 */
 	List<Member> selectMemberList();
 
 	/** 비밀번호 초기화
@@ -44,5 +31,7 @@ public interface MemberMapper {
 	 * @return
 	 */
 	int resetPw(Map<String, Object> map);
+
+	int restoration(int memberNo);
 
 }

@@ -10,7 +10,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
  * 
  * @Bean
  * - 개발자가 수동으로 생성한 객체의 관리를
- *   스프링에게 넘기는 어노테이션 (Bean 등록)
+ * 	 스프링에게 넘기는 어노테이션 (Bean 등록)
  * */
 
 

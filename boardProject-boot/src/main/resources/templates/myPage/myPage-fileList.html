@@ -46,10 +46,10 @@
               <td th:text="*{fileNo}">파일 번호</td>
 
               <td>
-                <!-- href 경로 : /myPage/file/20240417114905_00001.png-->
-                <a th:herf="|*{filePath}*{fileRename}|"
-                   th:download="*{fileOriginalName}"
-                   th:text="*{fileOriginalName}">파일명</a>
+                <!-- href 경로 : /myPage/file/20240417114905_0001.png -->
+                <a th:href="|*{filePath}*{fileRename}|"
+                  th:download="*{fileOriginalName}"
+                  th:text="*{fileOriginalName}">파일명</a>
               </td>
 
               <td th:text="*{memberNickname}">업로드 회원</td>
