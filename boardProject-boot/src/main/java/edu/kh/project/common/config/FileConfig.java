@@ -53,13 +53,13 @@ public class FileConfig implements WebMvcConfigurer{
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
 		
 		registry.addResourceHandler("/myPage/file/**") // 클라이언트 요청 주소 패턴
-		.addResourceLocations("file:///C:/uploadFiles/test/");
+		.addResourceLocations("file:///Users/yoonhee/uploadFiles/test/");
 		// 클라이언트가 /myPage/file/** 패턴으로 이미지를 요청할 때
 		// 요청을 연결해서 처리해줄 서버 폴더 경로 연결
 		
 		// 프로필 이미지 요청 - 서버 폴더 연결 추가
 		registry.
-		addResourceHandler(profileResourceHandler) // /myPage/progile/**
+		addResourceHandler(profileResourceHandler) // /myPage/profile/**
 		.addResourceLocations(profileResourceLocation); // file:///C:/uploadFiles/profile/
 		
 		// file:///C: 는 파일 시스템의 루트 디렉토리

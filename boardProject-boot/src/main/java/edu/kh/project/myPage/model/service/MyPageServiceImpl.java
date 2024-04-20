@@ -123,7 +123,7 @@ public class MyPageServiceImpl implements MyPageService{
 		// 업로드한 파일이 있을 경우
 		// C:/uploadFiles/test/파일명 으로 서버에 저장
 		uploadFile.transferTo(
-					new File("C:\\uploadFiles\\test\\" + uploadFile.getOriginalFilename()));
+					new File("/uploadFiles/test/" + uploadFile.getOriginalFilename()));
 		
 		// 웹에서 해당 파일에 접근할 수 있는 경로를 반환
 		
@@ -160,7 +160,7 @@ public class MyPageServiceImpl implements MyPageService{
 		// 1. 서버에 저장할 파일 경로 만들기
 		
 		// 파일이 저장될 서버 폴더 경로
-		String folderPath = "C:\\uploadFiles\\test\\";
+		String folderPath = "/uploadFiles/test/";
 		
 		// 클라이언트가 파일이 저장된 폴더에 접근할 수 있는 주소
 		String webPath = "/myPage/file/";
@@ -300,8 +300,7 @@ public class MyPageServiceImpl implements MyPageService{
 			// 업데이트한 경로로 변경
 			loginMember.setProfileImg(updatePath);
 			
-		}
-		
+		}		
 		
 		return result;
 	}
