@@ -11,6 +11,7 @@ driver.xml
 .project
 Servers
 META-INF
+._* 
 
 ### Eclipse ###
 .metadata
