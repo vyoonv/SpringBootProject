@@ -32,6 +32,14 @@ public class MemberController {
 	private MemberService service; 
 	
 	
+	/** 로그
+	 * @param inputMember
+	 * @param ra
+	 * @param model
+	 * @param saveId
+	 * @param resp
+	 * @return
+	 */
 	@PostMapping("login")
 	public String login(Member inputMember,
 						RedirectAttributes ra,
@@ -71,7 +79,7 @@ public class MemberController {
 		return "redirect:/"; 
 	}
 	
-	/**
+	/** 로그아
 	 * @param status (session status) : 세션을 완료시키는 역할의 객체 1
 	 * @return
 	 */
@@ -82,6 +90,14 @@ public class MemberController {
 		return "redirect:/"; 
 	}
 	
+	
+	@GetMapping("signup")
+	public String signupPage() {
+		
+		return "member/signup"; 
+		
+		
+	}
 	
 	
 	

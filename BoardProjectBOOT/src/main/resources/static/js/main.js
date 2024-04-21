@@ -43,3 +43,28 @@ if(loginEmail != null) { //로그인 창에 이메일 입력 부분이 화면에
 
 
 }
+
+// 이메일 비밀번호 미작성시 로그인 막기 
+const loginForm = document.querySelector("#loginForm"); 
+const loginPw = document.querySelector("#loginPw"); 
+
+if(loginForm != null) {
+
+    // 제출 이벤트 발생시 
+    loginForm.addEventListener("submit", e => {
+
+        if(loginEmail.value.trim().length === 0) {
+            alert("이메일을 작성해주세요"); 
+            e.preventDefault(); 
+            loginEmail.focus(); 
+            return; 
+        }
+        if(loginPw.value.trim().length === 0) {
+            alert("비밀번호를 작성해주세요"); 
+            e.preventDefault(); 
+            loginPw.focus(); 
+            return; 
+        }
+
+    }); 
+}
