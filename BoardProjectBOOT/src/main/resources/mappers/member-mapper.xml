@@ -13,7 +13,7 @@
 	</select>
 	
 	<!-- 이메일 중복 검사 -->
-	<select id="emailCheck" resultType="_int">
+	<select id="checkEmail" resultType="_int">
 		SELECT COUNT(*)
 		FROM "MEMBER"
 		WHERE MEMBER_DEL_FL = 'N'

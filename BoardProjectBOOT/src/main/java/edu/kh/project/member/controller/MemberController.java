@@ -100,14 +100,17 @@ public class MemberController {
 		
 	}
 	
+	/** 이메일 중복검사 서비스
+	 * @param memberEmail
+	 * @return
+	 */
 	@ResponseBody
 	@GetMapping("checkEmail")
-	public int checkEmail( @RequestParam("memberEmail") String memberEmail ) {
+	public int checkEmail(@RequestParam("memberEmail") String memberEmail) {
 		
-		return service.checkEmail(memberEmail); 
+		return service.checkEmail(memberEmail);
 		
 	}
-	
 	
 	
 
