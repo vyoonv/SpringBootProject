@@ -28,6 +28,7 @@ memberEmail.addEventListener("input", e => {
         memberEmail.value = ""; 
         return; 
     }
+    
     const regExp = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
     if( !regExp.test(inputEmail)) {
@@ -37,10 +38,24 @@ memberEmail.addEventListener("input", e => {
         checkObj.memberEmail = false; 
         return; 
     }
+    // 유효한 이메일 형식인지 검사(중복검사 비동기형식) 
     fetch("/member/checkEmail?memberEmail="+inputEmail)
     .then(resp => resp.text())
     .then(count => {
 
-        
+        if(count == 1) {
+            emailMessage.innerText = "이미 사용중인 이메일입니다"; 
+            emailMessage.classList.add('error'); 
+            emailMessage.classList.remove('confirm'); 
+            checkObj.memberEmail = false; 
+            return; 
+        }
+        emailMessage.innerText = "사용 가능한 이메일입니다"; 
+        emailMessage.classList.add('confirm'); 
+        emailMessage.classList.remove('error'); 
+        checkObj.memberEmail = true; 
+    }).catch(error=> {
+        console.log(error); 
     }); 
+
 }); 

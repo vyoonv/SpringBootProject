@@ -47,6 +47,12 @@ public class MemberServiceImpl implements MemberService{
 		loginMember.setMemberPw(null);	
 		
 		return loginMember;
+	}
+
+	@Override
+	public int checkEmail(String memberEmail) {
+		
+		return mapper.checkEmail(memberEmail);
 	} 
 	
 	
