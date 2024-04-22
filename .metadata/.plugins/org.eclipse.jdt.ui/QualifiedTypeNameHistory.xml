@@ -16,7 +16,6 @@
     <fullyQualifiedTypeName name="edu.kh.project.board.model.mapper.BoardMapper"/>
     <fullyQualifiedTypeName name="org.apache.ibatis.annotations.Mapper"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
     <fullyQualifiedTypeName name="edu.kh.project.common.interceptor.BoardTypeInterceptor"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
@@ -37,5 +36,10 @@
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
     <fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.codec.CodecProperties"/>
     <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
+    <fullyQualifiedTypeName name="edu.kh.project.board.model.dto.Pagination"/>
+    <fullyQualifiedTypeName name="org.apache.ibatis.session.RowBounds"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="edu.kh.project.board.model.dto.Board"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
 </qualifiedTypeNameHistroy>

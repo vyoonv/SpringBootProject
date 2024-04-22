@@ -38,10 +38,13 @@ public class BoardController {
 								  @RequestParam(value="cp", required = false, defaultValue="1") int cp, 
 								  Model model  ) {
 		
-		log.debug("boardCode : ", boardCode);
+		log.debug("boardCode : "+ boardCode);
 		
 		// 조회 서비스 호출 후 결과 반환 
 		Map<String, Object> map = service.selectBoardList(boardCode, cp); 
+		
+		model.addAttribute("pagination", map.get("pagination")); 
+		model.addAttribute("boardList", map.get("boardList")); 
 		
 		return "board/boardList"; // boardList.html로 forward
 		

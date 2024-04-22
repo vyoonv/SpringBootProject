@@ -4,6 +4,9 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.session.RowBounds;
+
+import edu.kh.project.board.model.dto.Board;
 
 @Mapper
 public interface BoardMapper {
@@ -18,6 +21,13 @@ public interface BoardMapper {
 	 * @return listCount
 	 */
 	int getListCount(int boardCode);
+
+	/** 특정 게시판의 지정된 페이지 목록 조회 
+	 * @param boardCode
+	 * @param rowBounds
+	 * @return boardList 
+	 */
+	List<Board> selectBoardList(int boardCode, RowBounds rowBounds);
 
 	
 	
