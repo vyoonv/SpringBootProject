@@ -1,0 +1,16 @@
+package edu.kh.project.board.model.service;
+
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import edu.kh.project.board.model.mapper.BoardMapper;
+
+
+@Transactional
+@Service
+public class BoardServiceImpl implements BoardService{
+
+	
+	private final BoardMapper mapper; 
+	
+}

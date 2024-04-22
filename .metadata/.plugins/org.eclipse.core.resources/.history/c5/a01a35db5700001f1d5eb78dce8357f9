@@ -1,0 +1,38 @@
+package edu.kh.project.board.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import edu.kh.project.board.model.service.BoardService;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
+@RequiredArgsConstructor
+@RequestMapping("board")
+@Controller
+public class BoardController {
+	
+	private final BoardService service; 
+	
+	/** 
+	 * @param boardCode
+	 * @return
+	 * 
+	 * [0-9] : 한 칸에 0~9 사이 숫자 입력 가능 
+	 * + : 하나 이상 
+	 * [0-9]+ : 모든 숫자 
+	 * 
+	 */
+	@GetMapping("{boardCode:[0-9]+}")
+	public String selectBoardList(@PathVariable("boardCode") int boardCode) {
+		
+		
+		
+	}
+	
+	
+
+}

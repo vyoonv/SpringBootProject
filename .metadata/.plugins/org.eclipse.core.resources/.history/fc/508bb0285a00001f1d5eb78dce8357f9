@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="edu.kh.project.board.model.mapper.BoardMapper">
+	
+	<!-- resultType 필수였는데 미작성할 수 있는 조건이 생김 
+		-> mapper 메서드의 반환형이 별칭으로 등록되어있을 때  -->
+	
+	
+	<!-- 게시판 종류 조회 -->
+	<select id="selectBoardTypeList">
+		SELECT BOARD_CODE "boardCode", BOARD_NAME "boardName"
+		FROM BOARD_TYPE 
+		ORDER BY BOARD_CODE
+	</select>
+
+
+</mapper>

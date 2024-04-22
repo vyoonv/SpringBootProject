@@ -1,0 +1,8 @@
+package edu.kh.project.common.interceptor;
+
+import org.springframework.web.servlet.HandlerInterceptor;
+
+
+public class BoardTypeInterceptor implements HandlerInterceptor {
+
+}

@@ -1,0 +1,24 @@
+package edu.kh.project.board.model.dto;
+
+public class Board {
+	
+	// board 테이블 컬럼 
+	private int boardNo; 
+	private String boardTitle; 
+	private String boardContent; 
+	private String boardWriteDate; 
+	private String boardUpdateDate; 
+	private int readCount; 
+	private String boardDelFl; 
+	private int memberNo; 
+	private int boardCode; 
+	
+	
+	// member 테이블 조인 
+	private String memberNickname; 
+	
+	// 목록 조회시 상관 서브 쿼리 결과 
+	private int commentCount; 
+	private int likeCount; 
+
+}
