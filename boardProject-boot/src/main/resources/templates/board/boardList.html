@@ -61,7 +61,13 @@
 							<td>
 								<!-- 썸네일 추가 예정 -->
 
-								<a th:text="*{boardTitle}">게시글 제목</a>
+								<!-- 상세 조회주소에 cp가 포함된 이유 : 상세->목록으로 돌아올때 사용 예정 -->
+								<a th:text="*{boardTitle}"
+								   th:href="@{/board/{boardCode}/{boardNo} (boardCode=${boardCode}, boardNo=*{boardNo}, cp=${pagination.currentPage})}"
+								   >게시글 제목</a>
+								<!-- pathVariable 이용해서 게시판번호/게시글번호를 요청주소로-->
+<!-- th:href="@{/board/{boardCode}/{boardNo} (boardCode=${boardCode}, boardNo=*{boardNo}, cp=${pagination.currentPage})}" -->
+
 								<th:block th:text="|[*{commentCount}]|">댓글수</th:block>
 
 							</td>
