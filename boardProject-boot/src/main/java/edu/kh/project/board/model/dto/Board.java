@@ -17,6 +17,7 @@ import lombok.ToString;
 @Getter
 public class Board {
 	
+		
 	// board 테이블 컬럼 
 	private int boardNo; 
 	private String boardTitle; 
@@ -48,5 +49,10 @@ public class Board {
 	
 	// 특정 게시글에 작성된 댓글 목록 
 	private List<Comment> commentList; 
+	
+	// 좋아요 여부 확인 
+	private int likeCheck; 
+	
+	
 
 }

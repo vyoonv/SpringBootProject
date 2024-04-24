@@ -46,14 +46,11 @@
 					select="selectCommentList"
 					column="BOARD_NO"
 					javaType="java.util.ArrayList"
-					ofType="Comment" />					
-					
+					ofType="Comment" />										
 	
 	</resultMap>
 	
-	
-		
-		
+
 	
 	
 	<!-- 게시판 종류 조회 -->
@@ -118,7 +115,10 @@
 		(SELECT IMG_PATH || IMG_RENAME
 		 FROM "BOARD_IMG"
 		 WHERE BOARD_NO = #{boardNo}
-		 AND   IMG_ORDER = 0) THUMBNAIL
+		 AND   IMG_ORDER = 0) THUMBNAIL, 		 
+		 (SELECT COUNT(*) FROM "BOARD_LIKE"
+			WHERE MEMBER_NO = #{memberNo} 
+			AND BOARD_NO = #{boardNo}) LIKE_CHECK
 	    FROM "BOARD"
 		JOIN "MEMBER" USING(MEMBER_NO)
 		WHERE BOARD_DEL_FL = 'N'
@@ -153,7 +153,46 @@
 	</select>
 	
 	
+	
 
+	<!-- 좋아요 해제 -->	
+	<delete id="deleteBoardLike">
+		DELETE FROM "BOARD_LIKE"
+		WHERE MEMBER_NO = #{memberNo}
+		AND BOARD_NO = #{boardNo}
+	</delete>
+	
+	
+	<!-- 좋아요 체크 -->	
+	<insert id="insertBoardLike">
+		INSERT INTO "BOARD_LIKE" (MEMBER_NO, BOARD_NO)
+		VALUES(#{memberNo},#{boardNo})
+	</insert>
+
+	<!-- 좋아요 개수 조회 -->
+	<select id="selectLikeCount">
+		SELECT COUNT(*)
+		FROM "BOARD_LIKE"
+		WHERE BOARD_NO = #{boardNo}
+	</select>
+
+
+
+
+	<!-- 조회수 증가 -->
+	<update id="updateReadCount">
+		UPDATE "BOARD" SET 
+		READ_COUNT = READ_COUNT + 1
+		WHERE BOARD_NO = #{boardNo}
+	</update>
+	
+	<!-- 조회수 조회 -->
+	<select id="selectReadCount">
+		SELECT READ_COUNT 
+		FROM "BOARD"
+		WHERE BOARD_NO = #{boardNo}	
+	</select>
+	
 
 
 
