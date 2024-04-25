@@ -88,7 +88,7 @@
                                         <!-- |${thumbnail.imgPath}${thumbnail.imgRename}| : BoardImg DTO에 있는 이미지 -->
 
                             <a th:href="|${thumbnail.imgPath}${thumbnail.imgRename}|"
-                             th:download="${thumbnail.imgOrignalName}">다운로드</a>         
+                             th:download="${thumbnail.imgOriginalName}">다운로드</a>         
                         </div>
                     </div>
             
@@ -104,7 +104,7 @@
                                 <img th:src="|${board.imageList[i].imgPath}${board.imageList[i].imgRename}|">  
 
                                 <a th:href="|${board.imageList[i].imgPath}${board.imageList[i].imgRename}|"
-                                   th:download="${board.imageList[i].imgOrignalName}">다운로드</a>                
+                                   th:download="${board.imageList[i].imgOriginalName}">다운로드</a>                
                             </div>
                         </div>
                     </th:block>

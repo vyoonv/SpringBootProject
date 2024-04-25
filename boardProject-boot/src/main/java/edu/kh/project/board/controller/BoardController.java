@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.SessionAttribute;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import edu.kh.project.board.model.dto.Board;
-import edu.kh.project.board.model.dto.boardImg;
+import edu.kh.project.board.model.dto.BoardImg;
 import edu.kh.project.board.model.service.BoardService;
 import edu.kh.project.member.model.dto.Member;
 import jakarta.servlet.http.Cookie;
@@ -203,7 +203,7 @@ public class BoardController {
 			// 조회된 이미지 목록(imageList)이 있을 경우
 			if( !board.getImageList().isEmpty() ) {
 				
-				boardImg thumbnail = null; 
+				BoardImg thumbnail = null; 
 				
 				// imageList의 0번 인덱스 == 가장 빠른 순서 (imgOrder)
 				

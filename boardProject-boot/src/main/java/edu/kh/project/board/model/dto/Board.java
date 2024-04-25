@@ -45,7 +45,7 @@ public class Board {
 	
 	// -- 추가 예정 ---
 	// 특정 게시글 이미지 목록 
-	private List<boardImg> imageList; 
+	private List<BoardImg> imageList; 
 	
 	// 특정 게시글에 작성된 댓글 목록 
 	private List<Comment> commentList; 
