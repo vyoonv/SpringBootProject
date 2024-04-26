@@ -6,6 +6,7 @@ import java.util.List;
 import org.springframework.web.multipart.MultipartFile;
 
 import edu.kh.project.board.model.dto.Board;
+import edu.kh.project.board.model.exception.ImageUpdateException;
 import lombok.RequiredArgsConstructor;
 
 
@@ -17,6 +18,17 @@ public interface EditBoardService {
 	 * @return boardNo 
 	 */
 	int boardInsert(Board inputBoard, List<MultipartFile> images) throws IllegalStateException, IOException;
+
+	/** 게시글 수정 
+	 * @param inputBoard
+	 * @param images
+	 * @param deleteOrder
+	 * @return result
+	 * @throws IOException 
+	 * @throws IllegalStateException 
+	 * @throws ImageUpdateException 
+	 */
+	int boardUpdate(Board inputBoard, List<MultipartFile> images, String deleteOrder) throws IllegalStateException, IOException, ImageUpdateException;
 
 
 	
