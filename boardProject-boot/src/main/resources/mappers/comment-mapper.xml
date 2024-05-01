@@ -30,7 +30,7 @@
 	<!-- 댓글 등록 / 자식 댓글 등록 -->
 	<insert id="insert">
 		INSERT INTO "COMMENT" 
-		VALUES (SEQ_COMMENT_NO.NEXTVAL, #{commentContent}, DEFAULT, DEFAULT, #{boardNo}, #{memberNo}, 
+		VALUES (SEQ_COMMENT_NO.NEXTVAL, #{commentContent}, DEFAULT, DEFAULT, #{boardNo}, #{memberNo},) 
 			<!-- 자식 댓글 -->
 			<if test="parentCommentNo != 0">
 				#{parentCommentNo}
@@ -38,7 +38,7 @@
 			<!-- 부모 댓글 -->
 			<if test="parentCommentNo == 0">
 			 	NULL
-			</if>
+			</if> ) 
 		
 	</insert>
 

@@ -33,6 +33,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class BoardTypeInterceptor implements HandlerInterceptor {
 	
+	
 	@Autowired
 	private BoardService service; 
 	// -> requiredArgsConstructor 사용 x 
@@ -66,8 +67,7 @@ public class BoardTypeInterceptor implements HandlerInterceptor {
 			
 			// 조회 결과를 application scope에 추가 
 			application.setAttribute("boardTypeList", boardTypeList);
-			
-			
+					
 			
 		}
 		

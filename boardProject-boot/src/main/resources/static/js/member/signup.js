@@ -93,7 +93,7 @@ memberEmail.addEventListener("input", e => {
 /* 이메일 인증 */
 
 // 인증번호 받기 버튼
-const sendAuthKeyBtn = document.querySelector("#sendAuthKeyBtn");
+const sendEmailBtn = document.querySelector("#sendEmailBtn");
 
 // 인증번호 입력 input
 const authKey = document.querySelector("#authKey");
@@ -116,7 +116,7 @@ let min = initMin;
 let sec = initSec;
 
 // 인증번호 받기 버튼 클릭 시
-sendAuthKeyBtn.addEventListener("click", () => {
+sendEmailBtn.addEventListener("click", () => {
 
     checkObj.authKey = false;
     authKeyMessage.innerText = "";
