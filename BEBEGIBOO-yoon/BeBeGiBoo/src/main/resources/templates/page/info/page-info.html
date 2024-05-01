@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymepeaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>페이지 소개</title>
+
+    <link rel="stylesheet" href="/css/page/info.css">
+    <th:block th:replace="~{common/common}"></th:block>
+</head>
+<body>
+
+    <th:block th:replace="~{common/header}"></th:block>
+    <header>
+        <div class="inner"></div>
+    </header>
+      <section>
+        <img src="/images/whoweare-bebegiboo.JPG">    
+      </section>
+
+      <div class="boardname">
+        <div class="col-md-12">
+        </div>
+      </div>
+
+      <div id="text-container"><p id="text">UNICEF HOPE 홍보영상</p></div>
+      <div id="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/8_mtzY7-rgU?si=hKzVyRpnG7WxO9f_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      
+    <th:block th:replace="~{common/footer}"></th:block>    
+
+    <script src="/js/page/info.js"></script>
+</body>
+</html>
