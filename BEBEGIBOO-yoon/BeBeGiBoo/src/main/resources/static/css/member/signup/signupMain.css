@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+  
+* {
+font-family: 'Pretendard-Regular';
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* 선택하기 폼 섹션 */
+.donatorCheck {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    margin-bottom: 150px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+/* 선택하기 폼 내부 */
+.donatorForm {
+    
+    box-sizing: border-box;
+    padding: 30px;
+    background: #FFFFFF;
+    border: 2px solid #AFAFAF;
+    width: 500px;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* 선택하기 글씨 */
+#select{
+    margin-bottom: 50px;
+}
+
+/* 기부자 체크박스 */
+#donator{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+/* 피기부자 체크박스 */
+#acceptor{
+    margin-bottom: 50px;
+    margin-right: 20px;
+}
+
+/* 제출하기 버튼 */
+#submitBtn{
+
+    width: 200px;
+    height: 70px;
+    
+    font-weight: 400;
+    font-size: 18px;
+    color: black;
+    background-color: #E5EDF8;
+  
+    border: none;
+    border-radius: 20px;
+}
+
+/* 회원가입 글씨 */
+#signUp{
+    margin-bottom: 40px;
+
+}
+
+/* 베베기부 로고 */
+#font-logo-area{
+    margin: 120px auto;
+    margin-bottom: 10px;
+}

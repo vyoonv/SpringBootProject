@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&display=swap');
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: 'Pretendard-Regular';
+    /*border: 1px black solid;*/
+}
+.l-text{
+	font-size : 20px;
+	font-family: 'Pretendard-Regular';
+	font-weight: 400;
+}
+.text {
+    font-family: 'Pretendard-Regular';
+    font-size: 17px;
+	margin : 0 10px;
+}
+.s-text {
+	font-family: 'Pretendard-Regular';
+    font-size: 12px;
+	text-decoration: none;
+	color:black;
+}
+.divider {
+	font-size: 30px;
+	margin: 0 20px;
+}
+main {
+	display : flex;
+	flex-direction: column;
+	justify-content: center;
+ }
+
+
+#font-logo-area{
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 80px;
+	margin-bottom: 40px;
+}
+
+
+
+main div:nth-child(2) {
+	display : flex;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+main div:nth-child(3){
+	display : flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+form {
+	width : 600px;
+	height : 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #858585;
+	margin-bottom: 20px;
+
+}
+.nameInput {
+
+	margin-right: auto;
+}
+
+ul {
+	list-style-type: none;
+}
+li:nth-child(1),
+li:nth-child(3),
+li:nth-child(5){
+	margin-bottom: 35px
+}
+li:nth-child(2),
+li:nth-child(4) {
+	margin-bottom: 20px;
+}
+
+input[name="memberName"] {
+	height : 25px;
+	width : 270px;
+}
+
+#inputArea {
+	display : flex;
+	justify-content: space-between;
+}
+
+#phoneNum,
+#email {
+	margin-left: -17px;
+}
+
+.input {
+	margin-left: 12px;
+	width : 350px;
+	height: 25px;
+	font-size: 11px;
+	padding:10px;
+	margin-bottom: 20px;
+}
+
+#findtBtn{
+	width: 400px;
+	height: 80px;
+	background-color: #DCEBFF;
+	border: 2px solid #DCEBFF;
+	border-radius: 20px;
+
+}

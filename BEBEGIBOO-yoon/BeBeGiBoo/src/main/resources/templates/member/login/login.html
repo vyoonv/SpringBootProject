@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    
+    <link rel="stylesheet" href="/css/member/login_inquiry/login.css">
+
+</head>
+<body>
+    <main>
+        <div id="font-logo-area">
+            <a href="/">
+                <img src="/images/font-logo.png" alt="font-logo">
+            </a>
+        </div>
+
+        <div>
+            <span class="l-text">로그인</span>
+        </div>
+        <div>
+            <form action="/member/login" method="POST" id="loginForm">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="text input">아이디</td>
+                            <td>
+                                <input name="memberId" type="text" class="loginInput" id ="loginId">
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td id = "idMessage"class="s-text error" style="visibility: hidden;">
+                                아이디를 입력해주세요
+                            </td>
+                        </tr>
+                        <tr class="e-text">
+                            <td class="text input">비밀번호</td>
+                            <td>
+                                <input name="memberPw" type="password" class="loginInput" id="loginPw">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="pwMessage"class="s-text error" style="visibility: hidden;">
+                                비밀번호를 입력해주세요
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+                <label id="saveIdArea" class="s-text">
+                    <input type="checkbox" name="saveId" id = "saveId" > 
+                    <span>아이디 기억하기</span>
+                </label>
+
+                <section id="loginBtnArea">
+                    <button id="loginBtn" class="text">로그인</button>
+                </section>
+
+
+
+                
+            </form>
+            <article class="signup-find-area">
+                <a href="/member/signup" class="s-text">회원가입</a>
+                <span class="divider">|</span>
+                <a href="/member/inquiry/idInquiry" class="s-text">아이디 찾기</a>
+                <span class="divider">|</span>
+                <a href="/member/inquiry/pwInquiry" class="s-text">비밀번호 찾기</a>
+            </article>
+        </div>
+    </main>
+
+    <script src="/js/member/login.js"></script>
+</body>
+</html>

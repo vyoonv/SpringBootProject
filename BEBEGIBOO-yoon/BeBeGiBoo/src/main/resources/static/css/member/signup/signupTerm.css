@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 기본 정렬 설정 */
+*{
+    font-family: 'Pretendard-Regular';    
+}
+
+/* 로고 */
+#font-logo-area{
+
+    margin: 200px auto;
+    margin-bottom: 0;
+
+}
+
+
+
+/*  -----------------------------------------  */
+
+
+/* 폼 전체 */
+#agreeForm{
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* table 전체 */
+.agreeBox{
+    box-sizing: border-box;
+    border: 1px solid #AECBEB;
+    padding: 40px;
+    height: auto;
+}
+
+/* 약관 */
+textarea{
+    width: 500px;
+    height: 120px;
+    background-color: rgb(241, 241, 241);
+    border: none;
+    font-weight: 300;
+    font-size: 11px;
+
+}
+
+/* 빈공간 영역 */
+.empty{
+    height: 10px;
+}
+
+
+/* 타이틀 */
+.titleText{
+    margin-bottom: 30px;
+}
+
+
+/* 동의 버튼 */
+#agreeBtn{
+
+    margin-top: 30px;
+    
+    width: 200px;
+    height: 70px;
+    
+    font-weight: 400;
+    font-size: 18px;
+    color: black;
+    background-color: #E5EDF8;
+  
+    border: none;
+    border-radius: 20px;
+}
+
+/* 텍스트 */
+.checkboxtext{
+    font-weight: 500;
+    font-size: 14px;
+
+}
+
+
+
+
+
+
+

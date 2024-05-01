@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pwInquiry</title>
+	<link rel="stylesheet" href="/css/main-style.css">
+	<link rel="stylesheet" href="/css/member/login_inquiry/inquiry.css">
+</head>
+<body>
+	<main>
+		    <div class="doc-title">
+		        <a href="/">
+		            <img src="/images/font-logo.png" alt="font-logo">
+		        </a>
+		    </div>
+		
+		    <div>
+		        <h4>비밀번호 찾기</h4>
+		    </div>
+		    <div>
+				<form>
+					<ul id="ulArea">
+						<li id="inputArea">
+							아이디
+							<input type="text" name="memberName"> 
+						</li>
+						<li>
+							<input type="radio" id="phoneCheck"> 휴대폰번호로 찾기
+						</li>
+						<li style="display:block;">
+							<input type="tel" class="input" id="phoneNum" placeholder="'-'를 포함해서 입력해주세요">					</li>
+						<li> 
+							<input type="radio" id="emailCheck"> 이메일로 찾기
+						</li>
+						<li style="display:block;">
+							<input type="email" class="input" id="email" placeholder="이메일 주소를 입력해주세요">
+						</li>
+					</ul>
+	
+					<section>
+						<button id="findtBtn" class="text">비밀번호 찾기</button>
+					</section>
+				</form>
+		
+				<article class="signup-find-area">
+					<a href="/member/signup" class="s-text">회원가입</a>
+					<span class="divider">|</span>
+					<a href="/member/inquiry/idInquiry" class="s-text">아이디 찾기</a>
+				</article>
+		    </div>
+		</main>
+		<th:block th:replace="~{common/footer}"></th:block>
+</body>
+</html>

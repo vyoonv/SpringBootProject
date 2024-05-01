@@ -1,0 +1,97 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  
+
+  .boardname{
+  
+    position: absolute;
+    z-index: 9;
+    color: white;
+    font-size: 50px;
+    top: 120vh;
+    text-align: center;
+    width: 100%;
+}
+  header {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    background-color: rgb(255, 217, 0);
+  }
+  
+  .inner {
+    margin-top: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/page-info.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  
+  #header-front
+  {
+    top: 25.3125vw;
+      left: calc(52.65% - 65.98958333333333vw / 2);
+      width: 65.98958vw;
+      position: absolute;
+      z-index: 3;
+      height: auto;
+  }
+  
+  #header-stones
+  {
+        position: absolute;
+      top: 35.08333vw;
+      left: 0;
+      width: 100%;
+      height: auto;
+  }
+  
+  section {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  #text {
+    text-align: center;
+    font-family: 'Pretendard-Regular';
+    font-size: 20px;
+  }
+
+  #video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+  }
+
+  iframe {
+    width: 1000px;
+    height: 570px;
+  }
+  

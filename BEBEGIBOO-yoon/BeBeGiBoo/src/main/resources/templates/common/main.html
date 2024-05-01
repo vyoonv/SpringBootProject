@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymepeaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEBEGBOO 메인페이지</title>
+
+
+    <th:block th:replace="~{common/common}"></th:block>
+
+</head>
+<body>
+    <main>
+        <th:block th:replace="~{common/header}"></th:block>
+        
+
+        <!-- 메인 배너 -->
+        <div class="slider">
+            <div class="slides">
+                <img src="/images/banner-1.png" alt="Image 1">
+                <img src="/images/banner-2.png" alt="Image 2">
+                <img src="/images/banner-3.png" alt="Image 3">
+            </div>
+        </div>
+        <button class="button" id="main-banner-donate">기부하러 가기</button>
+
+        <div id="who-container" class="showBox">
+
+            <div><img src="/images/logo-black.png" id="who-logo"></div>
+            <div id="who-text">
+                <div id="who-title">We are BEBEGIBOO!</div>
+                <div><img src="/images/whoweare-bebegiboo.JPG" id="who-content"></div>
+            </div>
+
+
+
+        </div>
+
+
+
+        <!-- 중간 배너 2-->
+        <div id="confirm">
+            <div class="line"></div>
+            <div><button class="button" id="confirm-button">인증 페이지로 이동</button></div>
+            <div class="line"></div>
+        </div>
+
+
+
+        <div class="wrap"> <!-- 배너표시영역 -->
+            <div class="rolling-list"> <!-- 원본배너 -->
+                <ul>
+                    <li>
+                        <div class="image-wrap"><img src="https://images.unsplash.com/photo-1471922694854-ff1b63b20054?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200" alt=""></div>
+                    </li>
+                    <li>
+                        <div class="image-wrap"><img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200" alt=""></div>
+                    </li>
+                    <li>
+                        <div class="image-wrap"><img src="https://images.unsplash.com/photo-1501493870936-9c2e41625521?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200" alt=""></div>
+                    </li>
+                    <li>
+                        <div class="image-wrap"><img src="https://images.unsplash.com/photo-1611832197549-ff910be125dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200" alt=""></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <!-- 기부하는 방법 글씨-->
+        <div id="howtodonate"><div class="text">|베베기부에 기부하는 방법|</div></div>
+
+        <!-- 기부하는 방법 순서 블럭 -->
+        <div id="container" class="showBox">
+            <div id="donate-box">
+    
+                <div class="donate-container" id="container1">
+                    <div class="title">1</div>
+                    <div class="text content">기부 가능 물품</div>
+                </div>
+    
+                <div class="donate-container" id="container2">
+                    <div class="title">2</div>
+                    <div class="text content">포장 및 배송 방법</div>
+                </div>
+    
+                <div class="donate-container" id="container3">
+                    <div class="title">3</div>
+                    <div class="text content">신청서 작성</div>
+                </div>
+    
+                <div class="donate-container" id="container4">
+                    <div class="title">4</div>
+                    <div class="text content">물품 발송</div>
+                </div>
+    
+            </div>
+        </div>
+
+
+        <!-- 기부하는 방법 -->
+        <div id="img-container">
+            <img src="/images/main-explain.png" id="ex-img">
+        </div>
+
+
+        <!-- 게시판 이동 -->
+        <div class="buttons-container showBox">
+            <div class="text" style="font-weight: bold;">게시판 이동</div>
+            <div><button class="text button botton-button">FAQ 게시판</button></div>
+            <div><button class="text button botton-button">후기 인증 게시판</button></div>
+        </div>
+
+
+
+        <style type="text/css">
+            .abi {
+                 width: 100%;
+                 height: 750px;
+                 margin-top: 100px;
+                 background-image: url('/images/forest.png');
+                 background-position: left;
+            }
+       </style>
+       
+       <div class="abi"></div>
+
+        
+
+
+        <!-- 맨 위로가는 버튼 -->
+        <div class="text" id="top-button">↑</div>
+
+    </main>
+
+    <th:block th:replace="~{common/footer}"></th:block>
+
+    <script src="/js/main.js"></script>
+
+    
+
+</body>
+</html>

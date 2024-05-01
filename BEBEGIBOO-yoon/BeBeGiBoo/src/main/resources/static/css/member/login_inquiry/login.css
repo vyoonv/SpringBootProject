@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&display=swap');
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*border: 1px black solid;*/
+}
+.l-text{
+	font-size : 20px;
+	font-family: 'Pretendard-Regular';
+	font-weight: 400;
+}
+.text {
+    font-family: 'Pretendard-Regular';
+    font-size: 15px;
+	margin : 0 10px;
+}
+.s-text {
+	font-family: 'Pretendard-Regular';
+    font-size: 12px;
+	text-decoration: none;
+	color:black;
+}
+.divider {
+	font-size: 30px;
+	margin: 0 20px;
+}
+main {
+	display : flex;
+	flex-direction: column;
+	justify-content: center;
+ }
+
+
+#font-logo-area{
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 80px;
+	margin-bottom: 40px;
+}
+
+
+
+main div:nth-child(2) {
+	display : flex;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+main div:nth-child(3){
+	display : flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+form {
+	width : 600px;
+	height : 500px;
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+	border: 1px solid #858585;
+	margin-bottom: 20px;
+}
+
+table {
+	margin-top: 140px;
+}
+tbody {
+	height: 80px;
+	display : flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+tr {
+	display: flex;
+	justify-content: space-between;
+}
+tbody tr:nth-child(2),
+tbody tr:nth-child(4) {
+
+	display:flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin-bottom: 10px;
+}
+
+.input {
+	width : 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.loginInput{
+	width: 270px;
+	height: 25px;
+
+}
+
+.error {
+	color : red;
+}
+
+#saveIdArea{
+	width: 200px;
+	margin:0 0 100px 20px;
+
+	display: flex;
+}
+#saveId {
+	margin-right: 5px;
+}
+#loginBtn{
+	width: 400px;
+	height: 80px;
+	background-color: #DCEBFF;
+	border: 2px solid #DCEBFF;
+	border-radius: 20px;
+}
+#loginBtn:hover{
+	cursor : pointer;
+	background-color : white;
+	transition-duration : 0.5s;
+
+}
+
+

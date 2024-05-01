@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymepeaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Main</title>
+
+    <th:block th:replace="~{common/common}"></th:block>
+    <link rel="stylesheet" href="/css/member/signup/signupMain.css">
+</head>
+<body>
+    <main>
+        <th:block th:replace="~{common/header}"></th:block>
+
+        <div id="font-logo-area">
+            <a href="/" id="font-logo">
+                <img src="/images/font-logo.png" alt="font-logo">
+            </a>
+        </div>
+        <section class="donatorCheck">
+
+            <div id="signUp">
+                <span>회원가입</span>
+            </div>
+
+            <form action="member/signup/signupMain" method="POST" name="signupMain" id="signupMain">
+
+                <table class="donatorForm">
+
+                    <tr id="select">
+                        <td><span>기부자 / 피기부자 선택하기</span></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="donator" id="donator" class="selectOne"><span id="donatorSpan">기부자</span></td>              
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="acceptor" id="acceptor" class="selectOne"><span id="acceptorSpan">피기부자</span></td>
+                    </tr>
+                    <tr>
+                        <td><button id="submitBtn">제출하기</button></td>
+                    </tr>
+                    
+                </table>   
+
+            </form>
+
+        </section>
+
+        
+
+
+    </main>
+    
+    <th:block th:replace="~{common/footer}"></th:block>
+
+    <script src="/js/member/signupMain.js"></script>
+</body>
+</html>

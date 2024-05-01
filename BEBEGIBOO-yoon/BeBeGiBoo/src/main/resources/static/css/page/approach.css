@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&display=swap');
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*border: 1px black solid;*/
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    font-family: 'Pretendard-Regular';
+    background-color: rgba(0,0,0,0);
+    border: 2px white solid;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.text {
+    font-family: 'Pretendard-Regular';
+    font-size: 20px;
+}
+
+#howtodonate {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    margin-bottom: 150px;
+}
+
+#donate-box {
+    width: 1600px;
+    height: 400px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.donate-container {
+    width: 250px;
+    height: 250px;
+    margin: 35px;
+    border-radius: 10px;
+    background-color:#fff4e4;
+    box-shadow: 10px 10px 5px rgb(121, 121, 121);
+    transition-duration: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.donate-container:hover {
+    background-color: #ffe297;
+}
+
+.title {
+    font-family: 'Pretendard-Regular';
+    font-weight: bold;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+
+#img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ex-img {
+    width: 1200px;
+}
+
+#top-button {
+    left: 96%;
+    top: 88%;
+    position: fixed;
+    font-size: 30px;
+    text-align: center;
+    height: 35px;
+    width: 35px;
+    background-color: white;
+    box-shadow: 5px 5px 5px gray;
+    cursor: pointer;
+    border-radius: 50%;
+}
