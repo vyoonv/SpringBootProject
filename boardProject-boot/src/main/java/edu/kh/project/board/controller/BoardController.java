@@ -252,7 +252,7 @@ public class BoardController {
 	}
 	
 	
-	
+	// 아무거나 
 	
 	
 	/** 게시글 좋아요 체크/해제
