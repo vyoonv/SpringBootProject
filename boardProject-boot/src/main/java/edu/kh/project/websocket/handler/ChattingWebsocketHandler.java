@@ -99,6 +99,7 @@ public class ChattingWebsocketHandler extends TextWebSocketHandler {
 				
 			}
 			
+			
 		}
 		
 	}
