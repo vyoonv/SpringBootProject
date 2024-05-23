@@ -236,8 +236,6 @@ function selectRoomList(){
 
 
 
-
-
 // 채팅 메세지 영역
 const display = document.getElementsByClassName("display-chatting")[0];
 
@@ -275,8 +273,6 @@ function roomListAddEvent(){
 		});
 	}
 }
-
-
 
 
 // 비동기로 메세지 목록을 조회하는 함수
@@ -386,6 +382,7 @@ const sendMessage = () => {
 		inputChatting.value = "";
 	}
 }
+
 
 // 엔터 == 제출
 // 쉬프트 + 엔터 == 줄바꿈
